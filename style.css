@@ -1,0 +1,1415 @@
+/* header  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-size: 20px; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-p1{
+    padding: 30px 80px;
+}
+
+#Header .logo{
+    width: 80px;
+    
+}
+
+#Header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: rgb(251, 252, 255);
+    box-shadow: 0px 5px 15px rgba(31, 27, 27, 0.3);
+    z-index: 99;
+}
+#Header a i{
+    font-size: 24px;
+    color:   rgb(6, 186, 246);
+    margin-right: 5px;
+}
+
+#Header a{
+    font-size: 24px;
+    color: rgb(15, 15, 15);
+    /* color: rgb(20, 140, 176); */
+    /* margin-right: 5px; */
+    list-style: none;
+    text-decoration: none;
+}
+#Header a:hover{
+    color: rgb(6, 186, 246);
+}
+ .container img{
+     margin-top: -60px;
+ }
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+#navbar li {
+    list-style: none;
+    margin-top: 5px;
+    position: relative;
+}
+#navbar button{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    padding: 10px 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 161, 238);
+    border: 1px solid  rgb(8, 161, 238);
+    border-radius: 10px;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    
+}
+#navbar button:hover{
+    background-color: transparent;
+    border: 1px solid  rgb(8, 161, 238);
+    color: black;
+
+}
+#navbar .btn-2{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 161, 238);
+    border-radius: 10px;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-btn a{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 161, 238);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    /* border: 2px solid rgb(8, 161, 238); */
+    margin-left: 40px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 20px ;
+
+    color: rgb(20, 21, 21);
+    transition: 0.3s ;
+    
+}
+#navbar li a:hover, #navbar li a.active {
+    color: rgb(6, 186, 246);
+    transition: 0.7s;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(6, 186, 246);
+    position: absolute;
+    bottom: -4px;
+    left: 21px;
+  
+
+}
+#mobile {
+    display: none;
+   
+}
+#close {
+    display: none;
+}
+
+
+
+
+
+/* Feature  */
+
+
+
+#services h2{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#services .f-boxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#services .box{
+    width: 30%;
+    /* height: 300px; */
+    min-width: 200px;
+    padding: 20px 30px;
+    border: 2px solid rgb(6, 186, 246);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: .2s ease;
+    margin: 15px 0;
+    position: relative;
+    transition:  0.5s ,transform 0.5s;
+   
+}
+#services .box p{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+}
+#services .box h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+#services .box h2 i{
+    font-size: 25px;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(6, 186, 246);
+    border-radius: 50%;
+    background-color:  rgb(6, 186, 246);
+    margin-right: 4px;
+}
+#services .box a{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: .3s;
+}
+#services .box a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    right: -60px;
+}
+#services .box a:hover{
+    color:  rgb(6, 186, 246);
+}
+#services .box a:hover::after{
+    background-color:  rgb(6, 186, 246);
+
+}
+#services .box:hover{
+    /* background:   rgb(6, 186, 246); */
+    transform: translateY(-10px);
+}
+
+#services span{
+    color:  rgb(6, 186, 246);
+}
+
+
+
+
+
+/* work  */
+
+
+#work{
+    text-align: center;
+}
+#work h2{
+    margin-bottom: 50px;
+}
+
+.work-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+}
+#work .work-img img{
+   width: 27%;
+   min-width: 200px;
+   
+}
+.image{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.image a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin-right: 5px;
+    transition: .3s;
+}
+.image a:hover{
+    color:  rgb(6, 186, 246);
+}
+.image i{
+    color:  rgb(6, 186, 246);
+}
+.image h5{
+    /* color:  rgb(6, 186, 246); */
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+.image p{
+    /* width: px; */
+    padding: 10px 60px;
+}
+.image .txt2{
+    margin-top: 5px;
+}
+#work span{
+    color:  rgb(6, 186, 246);
+}
+
+/* doctors  */
+
+
+#doctors h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#doctors span{
+    color:  rgb(6, 186, 246);
+}
+#doctors .box-container{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+#doctors .box-container .box{
+    border: 2px solid rgb(6, 186, 246);
+    padding: 20px 30px;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    transition:  0.5s ,transform 0.5s;
+}
+#doctors .box-container .box:hover{
+    transform: translateY(-20px);
+}
+#doctors .box-container .box img{
+    width: 300px;
+    border: 2px solid rgb(6, 186, 246);
+    border-radius: 20px;
+}
+#doctors .box-container .box h4{
+    font-size: 20px;
+   margin-top: 5px;
+}
+#doctors .box-container .box span{
+    font-size: 15px;
+    font-weight: 400; 
+}
+#doctors .box-container .box .share{
+    padding-top: 5px;
+}
+#doctors .box-container .box .share a{
+    border: 1px solid rgb(6, 186, 246);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+    color:  rgb(8, 161, 238);
+}
+#doctors .box-container .box .share a:hover{
+    color: white;
+    background-color: rgb(8, 161, 238);
+    border: 1px solid rgb(232, 236, 238);
+}
+
+
+
+
+
+
+/* clients   ------------------ */
+#clients{
+    /* padding: 40px 10px 40px 10px; */
+    text-align: center;
+}
+#clients h1{
+    
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#clients span{
+    color: rgb(8, 161, 238);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+.client{
+    background: white;
+    padding: 30px;
+}
+.client img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+.stars{
+    color:  rgb(238, 207, 8);
+}
+
+
+/* footer  */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    background-color: rgb(55 176 236 / 78%);
+    /* border-top: 2px solid grey; */
+}
+
+footer .col {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 200px;
+}
+footer .col .logo{
+    font-size: 40px;
+    text-decoration: none;
+
+}
+footer .col .logo i{
+    color: white;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+footer .col i{
+    margin-right: 10px;
+}
+footer .col .logo:hover{
+    transform: translateX(0px);
+    color: black;
+}
+
+footer .col img {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+footer .col h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 13px;
+    cursor: pointer;
+}
+footer .col p {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.col a{
+    text-decoration: none;
+    color: black;
+    transition:  .8s;
+    margin-bottom: 8px;
+}
+.col a:hover{
+    transform: translatex(20px);
+    color: white;
+}
+footer .icon i {
+    padding: 18px 20px;
+    background-color: black;
+    color: #fff;
+    border: rgb(8, 161, 238);
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+footer .icon i:hover{
+    background-color: transparent;
+    color: rgb(4, 4, 4);
+    /* border: 1px solid #fff; */
+}
+/*  */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(55 176 236 / 78%);}
+.copyright p {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* doctor.html  */
+
+
+#doc {
+    background-image: url(img/WhatsApp\ Image\ 2022-10-17\ at\ 14.37.01.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: top 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+#doc h2{
+    color: black;
+    font-weight: 600;
+}
+#doc p{
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#doc span{
+    color: rgb(8, 161, 238);
+}
+#doctors{
+    margin: 60px 0;
+}
+
+.boxes{
+    border: 2px solid rgb(8, 161, 238);
+    border-radius: 20px;
+}
+.doctors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxes h2{
+    text-align: center;
+     margin-top: 10px;
+     font-weight: 600;
+     font-size: 25px;
+     padding: 20px 40px;
+}
+.boxes{
+    margin-top: 50px;
+}
+.boxes span{
+    color:  rgb(8, 161, 238);
+}
+.d-box{
+    /* border: 2px solid rgb(6, 186, 246); */
+    padding: 20px 30px;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    width: 40%;
+}
+.doctors .d-box img{
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid rgb(6, 186, 246);
+}
+.doctors .d-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.doctors .d-box .share a{
+    border: 1px solid rgb(6, 186, 246);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+    color:  rgb(8, 161, 238);
+   
+}
+.doctors .d-box .share a:hover{
+    color: white;
+    background-color: rgb(8, 161, 238);
+    border: 1px solid rgb(232, 236, 238);
+}
+.doctors .content{
+    padding: 20px 40px;
+    width: 50%;
+}
+.doctors .d-box span{
+    margin-bottom: 4px;
+}
+.doctors .content button{
+    margin-top: 20px;
+    padding: 4px 20px;
+    background-color: #fff;
+    border: 2px solid  rgb(8, 161, 238);
+    color: rgb(8, 161, 238);
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+.doctors .content button i{
+    margin-left: 5px;
+}
+.doctors .content button:hover{
+    background-color: rgb(8, 161, 238);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Doctore Info  */
+
+#d1-details h2{
+   text-align: center;
+}
+.detail{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.detail .detail-left{
+    text-align: center;
+    width: 40%;
+
+}
+.detail .detail-left img{
+    width: 400px;
+    border: 3px solid rgb(8, 161, 238);
+    border-radius: 50%;
+}
+.detail .detail-left h3{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    /* text-align: center; */
+
+}
+.detail .detail-left p{
+    font-size: 25px;
+    color: grey;
+}
+.detail .detail-left h4{
+    color:  rgb(8, 161, 238);
+    font-size: 30px;
+}
+.detail .detail-left span{
+    color: rgb(8, 161, 238);
+    font-size: 700;
+}
+.detail .detail-right{
+    width: 40%;
+}
+.detail .detail-right h5{
+    color:  rgb(8, 161, 238);
+}
+.detail .detail-right h3{
+    font-weight: 600;
+    margin: 0;
+}
+.detail .detail-right i{
+    color:  rgb(8, 161, 238);
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.detail .detail-right a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(8, 161, 238);
+    margin-top: 30px;
+    border-radius: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+
+
+/* Book appointment  */
+
+#appoinment .heading{
+    text-align: center;
+    font-size: 40px;
+}
+
+#appoinment .heading span{
+    color: rgb(8, 161, 238);
+}
+#appoinment .app-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 40px;
+    /* border: 1px solid grey; */
+}
+#appoinment .app-left{
+    width: 40%;
+    height: 100vh;
+}
+#appoinment .app-left img{
+    width: 100%;
+    height: 100vh;
+}
+#appoinment .app-right{
+    border: 1px solid grey;
+    width: 50%;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+#appoinment .app-right h3{
+    font-size: 30px;
+}
+#appoinment .app-right h3 span{
+    color: rgb(8, 161, 238);
+}
+#appoinment .app-right p{
+    color: grey;
+    font-size: 13px;
+
+}
+#appoinment .app-right .form-detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+}
+
+#appoinment .app-right .form-detail h5{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+}
+#appoinment .app-right .form-detail input {
+    width: 100%;
+    padding: 10px 30px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+#appoinment .app-right .form-detail select{
+    width: 100%;
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    outline: none;
+    /* color: grey; */
+}
+#appoinment .app-right .form-detail select option{
+    color: grey;
+}
+#appoinment .app-right button{
+    padding: 6px 20px;
+    font-size: 15px;
+    background-color: rgb(8, 161, 238);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.show {
+    position: absolute;
+    top: 14%;
+    left: 10px;
+    background-color: rgb(104 247 104 / 74%);
+    color: white;
+    display: inline-block;
+    min-width: 300px;
+    padding: 6px 10px;
+    border: 2px solid rgb(104, 247, 104);
+}
+
+
+
+
+
+
+
+/* medicine.html */
+
+#p-medicine{
+    background-image: url(img/COVID-19ワクチン接種完了者、変異株に感染／NEJM｜CareNet_com.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.medicine-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    flex-flow: column;
+    color: black;
+    padding: 40px;
+   
+    /* background-position: tpo 25% left 0; */
+}
+#p-medicine h2{
+    color: black;
+    font-weight: 500;
+}
+#p-medicine p{
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#p-medicine span{
+    color: rgb(8, 161, 238);
+}
+
+#g-medicine h1{
+    font-size: 40px;
+    
+}
+#g-medicine .medicine-box{
+    margin: 30px;
+}
+#g-medicine h1 span{
+    color: rgb(8, 161, 238);
+}
+
+#g-medicine .m-box{
+    padding: 20px 40px;
+    border: 1px solid rgb(8, 161, 238);
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+#g-medicine .m-box h3{
+    font-size: 30px;
+}
+#g-medicine .m-box h3 span{
+    color: rgb(8, 161, 238);
+}
+#g-medicine .m-box p{
+    margin-bottom: 30px;
+}
+#g-medicine .m-box button{
+  
+    padding: 8px 20px;
+ 
+    background-color: rgb(8, 161, 238);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 300;
+    transition: .5s;
+    
+}
+#g-medicine .m-box button:hover{
+    color: #1a1a1a;
+    background-color: #fff;
+    border: 2px solid rgb(8, 161, 238);
+    font-weight: 500;
+}
+
+
+
+
+
+
+   /* Medicine info  */
+
+
+#m1-detail h2{
+    text-align: center;
+    margin: 30px;
+}
+#m1-detail h2 span{
+    color: rgb(8, 161, 238);
+}
+.m1-detail-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+.m1-detail-box .m1-left{
+    width: 40%;
+    margin-right: 40px;
+    
+}
+.m1-detail-box .m1-left img{
+    width: 80%;
+    height: 20%;
+    
+}
+
+.m1-detail-box .m1-right{
+    width: 60%;
+    border: 1px solid grey;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.m1-right select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.m1-detail-box span{
+    color: black;
+}
+.m1-right input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+.m1-right button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 161, 238);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    border: 2px solid rgb(8, 161, 238);
+}
+
+.m1-right h4{
+    font-size: 25px;
+    margin: 20px 0;
+   
+}
+
+
+
+/* about.html  */
+#p-about{
+    background-image: url(img/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: calc(1500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+#p-about h2{
+    font-weight: 600;
+    color: white;
+}
+#p-about span{
+  
+    color: rgb(8, 161, 238);
+}
+#p-about p{
+    color: whitesmoke;
+    font-weight: 400;
+}
+/* #page-header.about-header{
+    background: url(/img/about/banner.png);
+    background-position: center;
+} */
+
+#about-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+#about-head span{
+    color: rgb(8, 161, 238);
+}
+#about-head img{
+  width: 50%;
+  height: auto;
+  margin-right: 40px;
+}
+#about-head h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+}
+#about-head p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+
+
+
+
+
+
+
+
+/* contact.htnl  */
+
+#p-contact{
+    background-image: url(img/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: calc(1500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+#p-contact span{
+color: rgb(8, 161, 238);
+}
+#p-contact h2{
+    color: white;
+}
+#p-contact p{
+    color: whitesmoke;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+#contact .details{
+    width: 40%;
+}
+#contact .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+
+}
+#contact .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    cursor: pointer;
+}
+#contact .details li i{
+    font-size: 18px;
+    padding-right: 22px;
+    
+}
+#contact .details li p{
+    font-size: 18px;
+   
+}
+#contact .map{
+    width: 55%;
+    height: 450px;
+    border-radius: 20px;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #848080;
+    border-radius: 10px;
+}
+#form-details form button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 161, 238);
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(8, 161, 238);
+    transition: .5s;
+    
+}
+#form-details form button:hover{
+    color: black;
+    background-color: transparent;
+    border: 2px solid rgb(8, 161, 238);
+}
+#form-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#form-details img{
+    width: 40%;
+}
+
+.normal:hover{
+ color: black;
+ background-color: transparent;
+ border: 2px solid rgb(8, 161, 238);
+}
+
+
+
+
+
+
+
+
+.m-btn{
+    width: 105px; background-color: #25B1F8; text-align: center; font-weight: 800;border-radius: 10px;  color: white; font-size: 12px; display: inline-block; text-decoration: none; padding: 15px 10px;border: 1px solid #25B1F8;
+}
+.m-btn:hover{
+    color: black;
+    background-color: #fff;
+    border: 1px solid #25B1F8;
+}
+
+
+footer .col h4{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:820px) {
+
+    .section-p1{
+        padding: 40px 10px;
+    }
+    #navbar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
+        padding: 80px 0 0 10px;
+        transition: 0.2s;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display: block;
+       
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:477px) {
+    #navbar{
+      
+        left: -300px;
+        height: 100vh;
+        width: 300px;
+        
+    }
+    .section-p1{
+        padding: 40px 10px;
+    }
+    .container img {
+        margin-top: 0px;
+    }
+    #services .box {
+        width: 100%;
+        
+    }
+    #Header {
+        
+        padding: 10px 30px;
+        
+    }
+    .work-img {
+        
+        flex-wrap: wrap;
+        
+    }
+    #doctors .box-container .box img {
+        width: 200px;
+        
+    }
+    #clients h1 {
+        font-size: 25px;
+        
+    }
+   .row{
+            /* display: contents; */
+        }
+   
+        #clients .col{
+            display: contents;
+        }
+
+
+
+        /* doctor  */
+
+        .doctors {
+            flex-direction: column;
+          
+        }
+        .d-box {
+            width: 100%;
+        }
+        .doctors .content {
+            padding: 20px 20px;
+            width: 100%;
+        }
+        #appoinment .app-left {
+
+            display: none;
+        }
+        #appoinment .app-right {
+         
+            width: 100%;
+            padding: 20px 10px;
+      
+        }
+        #appoinment .app-right .form-detail h5 {
+           
+            width: 60%;
+            margin-right: 5px;
+            /* margin-top: 10px; */
+            font-size: 16px;
+        }
+        #appoinment .app-right .form-detail {
+            
+            margin-bottom: 30px;
+        }
+        .detail {
+     
+            flex-direction: column;
+        }
+        .detail .detail-left {
+
+            width: 100%;
+        }
+        .detail .detail-left img {
+            width: 100%;
+          
+        }
+        .detail .detail-right {
+            width: 100%;
+            padding: 10px 20px;
+        }
+        .detail .btn{
+            display: flex;
+        }
+
+
+        /* medicine  */
+
+        #g-medicine h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #g-medicine .medicine-box {
+            margin: 0px;
+            padding: 0 20px;
+        }
+        #g-medicine .m-box {
+            padding: 20px 20px;
+           
+        }
+        #p-medicine p {
+            
+            
+            font-size: 12px;
+           
+        }
+        #g-medicine .m-box h3 {
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+        #about-head {
+            flex-flow: column;
+        }
+        #about-head img {
+            width: 100%;
+            /* height: auto; */
+            margin-right: 0px;
+        }
+        #about-head h2,p{
+
+            padding: 10px 20px;
+        }
+
+
+
+        #contact {
+            flex-direction: column;
+        }
+        #contact .details {
+            width: 100%;
+            padding: 10px 20px
+        }
+        #contact .details li i {
+            margin-top: 12px;
+        }
+        #contact .map {
+            width: 100%;
+            padding: 10px 20px
+        }
+        #form-details img {
+            /* width: 40%; */
+            display: none;
+        }
+        #form-details form {
+            width: 100%;
+            padding: 10px 20px
+        }
+}
